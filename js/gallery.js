@@ -92,19 +92,18 @@ const styles = `
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
     margin: 0;
-    padding: 20px;
+    padding: 24px;
   }
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 24px;
     list-style: none;
     padding: 0;
   }
 
   .gallery-item {
-    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
