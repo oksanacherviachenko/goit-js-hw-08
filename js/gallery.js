@@ -83,10 +83,6 @@ const galleryMarkup = images.map(({ preview, original, description }) => {
 
 galleryContainer.innerHTML = galleryMarkup;
 
-galleryContainer.addEventListener('click', event => {
-  event.preventDefault();
-});
-
 const styles = `
   body {
     font-family: 'Roboto', sans-serif;
