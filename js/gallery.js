@@ -86,3 +86,47 @@ galleryContainer.innerHTML = galleryMarkup;
 galleryContainer.addEventListener('click', event => {
   event.preventDefault();
 });
+
+const styles = `
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-link {
+    display: block;
+  }
+
+  .gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+`;
+
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = styles;
+
+document.head.appendChild(styleSheet);
