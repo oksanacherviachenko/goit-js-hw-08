@@ -129,3 +129,12 @@ styleSheet.type = "text/css";
 styleSheet.innerText = styles;
 
 document.head.appendChild(styleSheet);
+
+galleryContainer.addEventListener('click', event => {
+  event.preventDefault();
+
+  if (event.target.classList.contains('gallery-image')) {
+    const largeImageURL = event.target.dataset.source;
+    console.log(largeImageURL);
+  }
+});
